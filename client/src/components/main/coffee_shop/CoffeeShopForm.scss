@@ -1,0 +1,47 @@
+@import 'variables';
+
+.shop-form-container {
+  padding-bottom: 100px;
+  width: 100%;
+  min-height: 100%;
+  margin: auto;
+}
+
+.shop-form {
+  margin: auto;
+  max-width: 100%;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  h1 {
+    padding: 18px 0 15px 0;
+    font-size: 20px;
+  }
+  label, input, button {
+    margin-top: 5px;
+  }
+  input,
+  select,
+  textarea,
+  button {
+    width: 100%;
+    font-size: 16px;
+    margin-top: 20px;
+    height: 46px;
+    background-color: darken(#ffffff, 10%);
+    border: none;
+    border-radius: 3px;
+  }
+  textarea {
+    height: 92px;
+  }
+  button {
+    margin-top: 20px;
+    background-color: darken(#ffffff, 20%);
+    font-weight: 600;
+    &:hover {
+      cursor: pointer;
+      background-color: darken(#ffffff, 30%);
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "name": "craftcoffeefinder",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "server": "nodemon ./bin/www --ignore client",
+    "server:production": "node ./bin/www",
+    "server:debug": "nodemon --ignore client --inspect ./bin/www",
+    "frontend-install": "npm install --prefix client",
+    "frontend": "npm start --prefix client",
+    "dev": "concurrently \"npm run server:debug\" \"npm run frontend\"",
+    "test": "concurrently -k \"npm run server\" \"npm run frontend \" \"npx cypress run --record false\""
+  },
+  "dependencies": {
+    "@types/graphql": "^14.5.0",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^5.0.0",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.5.8",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.8",
+    "morgan": "~1.9.1",
+    "nodemon": "^1.19.4",
+    "passport": "^0.4.0",
+    "type-graphql": "^0.17.5",
+    "validator": "^12.0.0",
+    "yup": "^0.27.0"
+  },
+  "devDependencies": {
+    "cypress": "^3.8.3",
+    "eslint": "^6.6.0",
+    "eslint-plugin-cypress": "^2.8.1",
+    "eslint-plugin-import": "^2.18.2",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.2",
+    "prettier": "^1.18.2"
+  },
+  "lint-staged": {
+    "client/src/**/*.{js,jsx,ts,tsx,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}

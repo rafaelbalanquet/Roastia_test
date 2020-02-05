@@ -1,0 +1,88 @@
+.auth-modal-screen {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(26, 33, 39, 0.65);
+  z-index: 1000;
+}
+
+.auth-modal-content {
+  background-color: #ffffff;
+  margin: auto;
+  overflow: auto;
+  margin-top: 35px;
+  display: block;
+  position: relative;
+  width: 85%;
+  height: 85%;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.auth-modal-content {
+  font-size: 16px;
+  span > a {
+    display: inline-block;
+    margin-left: 5px;
+    height: 30px;
+  }
+}
+
+.auth-modal-body {
+  margin: auto;
+  height: 80%;
+  width: 85%;
+}
+
+.auth-modal-header {
+  font-size: 20px;
+  padding: 8px 0 10px 0;
+}
+
+.login-form,
+.signup-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  label, input, button {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  input,
+  button {
+    margin-top: 20px;
+    height: 46px;
+    background-color: darken(#ffffff, 10%);
+    border-radius: 3px;
+  }
+  button {
+    margin-top: 20px;
+    background-color: darken(#ffffff, 20%);
+    font-weight: 600;
+    &:hover {
+      cursor: pointer;
+      background-color: darken(#ffffff, 30%);
+    }
+  }
+}
+
+.welcome-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: inherit;
+}
+
+.welcome-message h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.welcome-message h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,127 @@
+@import 'variables';
+
+.dropdown {
+  background: $background-light;
+  cursor: pointer;
+  button {
+    border-radius: $border-radius;
+    background: #faefe4;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    cursor: pointer;
+    //border: 1px solid $primary-dark;
+    padding: 5px 15px;
+    margin: 5px;
+  }
+
+  button:hover {
+    background: #eae9e9;
+  }
+
+  div {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    z-index: 500;
+    width: 200px;
+    border-radius: $border-radius;
+    a {
+      text-decoration: none;
+      padding: 10px;
+      color: black;
+    }
+    a:hover {
+      background: rgb(227, 226, 226);
+    }
+  }
+}
+
+
+
+.forms-dropdown {
+  display: flex;
+  align-items: center;
+}
+
+.login-signup {
+  a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-family: inherit;
+    font-weight: 600;
+    padding: 10px 15px;
+    margin: 5px;
+    transition: background 0.4s;
+  }
+  a:hover {
+    background: #eae9e9;
+    border: darkgray;
+    border-radius: 4px;
+    transition: background 0.4s;
+  }
+}
+
+.logout {
+  a {
+    text-decoration: none;
+    color: black;
+    font-family: inherit;
+    font-weight: 600;
+    padding: 5px 10px;
+    margin: 5px;
+  }
+  a:hover {
+    background: #eae9e9;
+    border: darkgray;
+    border-radius: 4px;
+  }
+}
+
+.logout {
+  button {
+    text-decoration: none;
+    color: black;
+    font-family: inherit;
+    font-weight: 600;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background: #eae9e9;
+    border: darkgray;
+    border-radius: 4px;
+  }
+}
+
+.logout {
+  display: flex;
+}
+
+.plus {
+  height: 12px;
+  width: 12px;
+  padding-right: 5px;
+}
+
+.roastia-logo {
+  height: 60px;
+}
+
+.top-bar-container {
+  font-family: $header-font;
+  line-height: 18px;
+  font-size: 14px;
+  width: 100%;
+  background-color: $background-light;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
